@@ -1,5 +1,8 @@
 # AppCart
 
+
+https://chatgpt.com/share/69bbf33b-ef18-800d-88f3-dabc844c1940
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
 
 ## Development server
