@@ -1,0 +1,8 @@
+<app-login (loginEvent)="user = $event"></app-login>
+
+<div *ngIf="user">
+  <h2>Welcome, {{user}}</h2>
+
+  <app-app-list></app-app-list>
+  <app-cart></app-cart>
+</div>
