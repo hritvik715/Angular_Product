@@ -1,1 +1,8 @@
-<p>app-list works!</p>
+<h2>App List</h2>
+
+<div *ngFor="let app of apps">
+  {{app.name}} - ₹{{app.price}}
+  <button (click)="add(app)">Add</button>
+</div>
+
+<button (click)="goToCart()">Go to Cart</button>

@@ -1,1 +1,13 @@
-<p>cart works!</p>
+<h2>Your Cart</h2>
+
+<div *ngFor="let item of cart">
+  {{item.name}} - ₹{{item.price}} × {{item.qty}} = ₹{{item.price * item.qty}}
+
+  <button (click)="decrease(item)">-</button>
+  <button (click)="increase(item)">+</button>
+  <button (click)="remove(item)">Remove</button>
+</div>
+
+<h3>Total: ₹{{ getTotal() }}</h3>
+
+<button (click)="goHome()">Back to Home</button>

@@ -1,8 +1,11 @@
 import { importProvidersFrom } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { provideRouter } from '@angular/router';
+import { routes } from './app.routes';
 
 export const appConfig = {
   providers: [
-    importProvidersFrom(FormsModule)
+    importProvidersFrom(FormsModule),
+    provideRouter(routes) // 🔥 THIS IS STEP 2
   ]
 };
